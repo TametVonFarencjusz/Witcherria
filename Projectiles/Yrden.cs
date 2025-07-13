@@ -69,13 +69,6 @@ namespace Witcherria.Projectiles
         }
 
         //General Distance Check
-        /*public bool DistanceCheckCircle(NPC npc, float distance)
-        {
-            float X = ValhallaMath.Median(npc.position.X, npc.position.X + npc.width, Projectile.Center.X);
-            float Y = ValhallaMath.Median(npc.position.Y, npc.position.Y + npc.height, Projectile.Center.Y);
-            return Vector2.Distance(Projectile.Center, new Vector2(X, Y)) <= (double)distance;
-        }*/
-
         public bool DistanceCheckHexagon(NPC npc, float distance)
         {
             float X = MathHelper.Clamp(Projectile.Center.X, npc.position.X, npc.position.X + npc.width);

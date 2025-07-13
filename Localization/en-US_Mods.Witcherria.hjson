@@ -1,16 +1,6 @@
 # This file will automatically update with entries for new content after a build and reload.
 
 Items: {
-	Blank: {
-		DisplayName: Blank
-		Tooltip:
-			'''
-			Template of an item
-			Replacing this tooltip is duty 
-			It's snowing on Mt.Fuji
-			'''
-	}
-
 	WitcherSilverSword: {
 		DisplayName: Witcher Silver Sword
 		Tooltip: ""
@@ -178,7 +168,7 @@ Items: {
 }
 
 "Keybinds.Show Signs.DisplayName": Show  Signs
-UI.Vigor: Mods.Witcherria.UI.Vigor
+UI.Vigor: Vigor
 
 Buffs: {
 	IgniDebuff: {

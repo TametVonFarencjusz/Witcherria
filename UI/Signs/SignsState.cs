@@ -99,7 +99,7 @@ namespace Witcherria.UI.Signs
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            // This prevents drawing unless we are using an ExampleDamageItem
+            // This prevents drawing if it should not be drawn
             if (!Main.LocalPlayer.GetModPlayer<UIModPlayer>().signsShow || Main.LocalPlayer.GetModPlayer<UIModPlayer>().signsShowUpdate)
             {
                 return;

@@ -3,7 +3,6 @@
 namespace Witcherria.Systems
 {
     // Acts as a container for keybinds registered by this mod.
-    // See Common/Players/ExampleKeybindPlayer for usage.
     public class WitcherriaKeybindSystem : ModSystem
     {
         public static ModKeybind ShowSignsKeybind { get; private set; }

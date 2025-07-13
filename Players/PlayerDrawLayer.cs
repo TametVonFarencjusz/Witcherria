@@ -48,7 +48,6 @@ namespace Witcherria.Players
         {
             Player drawPlayer = drawInfo.drawPlayer;
             SignPlayer signPlayer = drawPlayer.GetModPlayer<SignPlayer>();
-            // The following code draws ExampleItem's texture behind the player's head.
 
             Rectangle? sourceRect = null;
             int countFrames = 1;

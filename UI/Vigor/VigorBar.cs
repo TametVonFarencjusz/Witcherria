@@ -13,17 +13,14 @@ using Witcherria.Players;
 
 namespace Witcherria.UI.Vigor
 {
-    // This custom UI will show whenever the player is holding the ExampleCustomResourceWeapon item and will display the player's custom resource amounts that are tracked in ExampleResourcePlayer
+    // This custom UI will show whenever the player has Wolf Medallion item and will display the player's Vigor resource amounts that are tracked in SignPlayer
     internal class VigorBar : UIState
     {
         // For this bar we'll be using a frame texture and then a gradient inside bar, as it's one of the more simpler approaches while still looking decent.
         // Once this is all set up make sure to go and do the required stuff for most UI's in the ModSystem class.
-        private UIText text;
         private UIElement area;
         private UIImage barFrame;
         private UIImage iconFrame;
-        private Color gradientA;
-        private Color gradientB;
 
         public override void OnInitialize()
         {
@@ -32,7 +29,7 @@ namespace Witcherria.UI.Vigor
             area = new UIElement();
             area.Left.Set(-area.Width.Pixels - 600, 1f); // Place the resource bar to the left of the hearts.
             area.Top.Set(30, 0f); // Placing it just a bit below the top of the screen.
-            area.Width.Set(182, 0f); // We will be placing the following 2 UIElements within this 182x60 area.
+            area.Width.Set(182, 0f);
             area.Height.Set(60, 0f);
 
             barFrame = new UIImage(ModContent.Request<Texture2D>("Witcherria/UI/Vigor/VigorFrame")); // Frame of our resource bar
@@ -47,16 +44,6 @@ namespace Witcherria.UI.Vigor
             iconFrame.Width.Set(138, 0f);
             iconFrame.Height.Set(34, 0f);
 
-            text = new UIText("0/0", 0.8f); // text to show stat
-            text.Width.Set(138, 0f);
-            text.Height.Set(34, 0f);
-            text.Top.Set(40, 0f);
-            text.Left.Set(0, 0f);
-
-            gradientA = new Color(123, 25, 138); // A dark purple
-            gradientB = new Color(187, 91, 201); // A light purple
-
-            area.Append(text);
             area.Append(barFrame);
             area.Append(iconFrame);
             Append(area);
@@ -127,19 +114,6 @@ namespace Witcherria.UI.Vigor
                     iconFrame.SetImage(ModContent.Request<Texture2D>("Witcherria/UI/Signs/Sign"));
                     break;
             }
-        }
-
-        public override void Update(GameTime gameTime)
-        {
-            if (!Main.LocalPlayer.GetModPlayer<SignPlayer>().wolfMedallion)
-            {
-                return;
-            }
-
-            var modPlayer = Main.LocalPlayer.GetModPlayer<SignPlayer>();
-            // Setting the text per tick to update and show our resource values.
-            text.SetText(VigorSystem.VigorText.Format(modPlayer.statVigor, 100));
-            base.Update(gameTime);
         }
     }
 
