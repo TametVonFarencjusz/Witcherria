@@ -1,0 +1,225 @@
+# This file will automatically update with entries for new content after a build and reload.
+
+Items: {
+	Blank: {
+		DisplayName: Blank
+		Tooltip:
+			'''
+			Template of an item
+			Replacing this tooltip is duty 
+			It's snowing on Mt.Fuji
+			'''
+	}
+
+	WitcherSilverSword: {
+		DisplayName: Witcher Silver Sword
+		Tooltip: ""
+	}
+
+	WitcherSteelSword: {
+		DisplayName: Witcher Steel Sword
+		Tooltip: ""
+	}
+
+	WolfMedallion: {
+		DisplayName: Wolf Medallion
+		Tooltip: ""
+	}
+
+	KaerMorhenArmor: {
+		DisplayName: Kaer Morhen Armor
+		Tooltip: ""
+	}
+
+	KaerMorhenHeadband: {
+		DisplayName: Kaer Morhen Headband
+		Tooltip: ""
+	}
+
+	KaerMorhenLegs: {
+		DisplayName: Kaer Morhen Legs
+		Tooltip: ""
+	}
+
+	Astralicollum: {
+		DisplayName: Astralicollum
+		Tooltip: ""
+	}
+
+	BonePilePlinker: {
+		DisplayName: Bone Pile Plinker
+		Tooltip: ""
+	}
+
+	FelineCrossbow: {
+		DisplayName: Feline Crossbow
+		Tooltip: ""
+	}
+
+	IronCrossbow: {
+		DisplayName: Iron Crossbow
+		Tooltip: ""
+	}
+
+	LeadCrossbow: {
+		DisplayName: Lead Crossbow
+		Tooltip: ""
+	}
+
+	DarksteelScrap: {
+		DisplayName: Darksteel Scrap
+		Tooltip: ""
+	}
+
+	BloedAedd: {
+		DisplayName: Bloed Aedd
+		Tooltip: ""
+	}
+
+	BloodyZireael: {
+		DisplayName: Bloody Zireael
+		Tooltip: ""
+	}
+
+	CopperCoredRapier: {
+		DisplayName: Copper Cored Rapier
+		Tooltip: ""
+	}
+
+	CopperMesser: {
+		DisplayName: Copper Messer
+		Tooltip: ""
+	}
+
+	FelineDarksteelSword: {
+		DisplayName: Feline Darksteel Sword
+		Tooltip: ""
+	}
+
+	Iris: {
+		DisplayName: Iris
+		Tooltip: ""
+	}
+
+	IronMesser: {
+		DisplayName: Iron Messer
+		Tooltip: ""
+	}
+
+	KoperChopper: {
+		DisplayName: Koper Chopper
+		Tooltip: ""
+	}
+
+	LeadMesser: {
+		DisplayName: Lead Messer
+		Tooltip: ""
+	}
+
+	LustrousZireael: {
+		DisplayName: Lustrous Zireael
+		Tooltip: ""
+	}
+
+	Metorrite: {
+		DisplayName: Metorrite
+		Tooltip: ""
+	}
+
+	MourningAxe: {
+		DisplayName: Mourning Axe
+		Tooltip: ""
+	}
+
+	Piast: {
+		DisplayName: Piast
+		Tooltip: ""
+	}
+
+	TrueSilver: {
+		DisplayName: True Silver
+		Tooltip: ""
+	}
+
+	VilePawprint: {
+		DisplayName: Vile Pawprint
+		Tooltip: ""
+	}
+
+	WyvernsBite: {
+		DisplayName: Wyverns Bite
+		Tooltip: ""
+	}
+
+	SwordsScabbard: {
+		DisplayName: Swords Scabbard
+		Tooltip: ""
+	}
+
+	DarkSteelAxe: {
+		DisplayName: Dark Steel Axe
+		Tooltip: ""
+	}
+
+	DarkSteelHammer: {
+		DisplayName: Dark Steel Hammer
+		Tooltip: ""
+	}
+
+	DarkSteelPick: {
+		DisplayName: Dark Steel Pick
+		Tooltip: ""
+	}
+
+	KaerMorhenEyeshadow: {
+		DisplayName: Kaer Morhen Eyeshadow
+		Tooltip: ""
+	}
+}
+
+"Keybinds.Show Signs.DisplayName": Show  Signs
+UI.Vigor: Mods.Witcherria.UI.Vigor
+
+Buffs: {
+	IgniDebuff: {
+		DisplayName: Igni Debuff
+		Description: Mods.Witcherria.Buffs.IgniDebuff.Description
+	}
+
+	QuenBuff: {
+		DisplayName: Quen Buff
+		Description: Mods.Witcherria.Buffs.QuenBuff.Description
+	}
+
+	WitcherSense: {
+		DisplayName: Witcher Sense
+		Description: Mods.Witcherria.Buffs.WitcherSense.Description
+	}
+
+	YrdenDebuff: {
+		DisplayName: Yrden Debuff
+		Description: Mods.Witcherria.Buffs.YrdenDebuff.Description
+	}
+
+	RoachMountBuff: {
+		DisplayName: Roach Mount Buff
+		Description: Mods.Witcherria.Buffs.RoachMountBuff.Description
+	}
+}
+
+Projectiles: {
+	Aard.DisplayName: Aard
+	Axii.DisplayName: Axii
+	Igni.DisplayName: Igni
+	Yrden.DisplayName: Yrden
+}
+
+NPCs: {
+	AlbaArbalest.DisplayName: Alba Arbalest
+	AlpaMaceman.DisplayName: Alpa Maceman
+	ArmedBandit.DisplayName: Armed Bandit
+	MutatedHound.DisplayName: Mutated Hound
+	Nilfguard.DisplayName: Nilfguard
+	Roach.DisplayName: Roach
+	SyndicateArcher.DisplayName: Syndicate Archer
+}

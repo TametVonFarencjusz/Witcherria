@@ -1,0 +1,20 @@
+Mod created for the first tModLoader Mod Jam.
+
+New Mechanics:
+a) Enemies are now split into groups, Monsters that take more damage from Silver and the Humans that take more damage from Steel (some of enemies don't have damage penalty like Slimes and mechanical enemies).
+We didn't have time to make all the items fit the Silver/Steel categories. For now only modded items have types.
+What type the enemy is can be checked while using the new Witcher Sense. Enemies with the Witcher 3 "monster" symbol are vulnerable to Silver and with skull are vulnerable to Steel. Enemies without any symbol are vulnerable to both weapon types.
+
+b) Another mechanic from Witcher that we added are Witcher Signs. We added all base 5 from the Witcher 3 and 2 other Witcher based effect that can be picked and used.
+5 basic Signs are:
+Yrden - Creates zone within which ghost enemies take more damage. It also decreases penalty from using wrong metal type sword.
+Quen - Provides a temporary buff that will make you dodge the next attack.
+Igni - Shoots a cone of fire that burns enemies and decreases their armor by half.
+Axii - Deals damage and confuses enemies near mouse cursor.
+Aard - Knockbacks all enemies around player.
+All signs can be cast while Vigor bar is full and they consume all of it. It takes around 15 secounds to replenish Vigor bar.
+2 other witcher effects are:
+Witcher Sense - gives buff that slows player but allows to see Enemies (also they vulnerable type), Treasures and Traps.
+Call Roach - Calls Roach your faithful and agile mount, Keep track of her on your map, she might get stuck on a fence!
+
+Mod uses some sounds from Witcher game series that are property of CD Projekt RED.

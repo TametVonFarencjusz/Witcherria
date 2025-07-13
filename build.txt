@@ -1,0 +1,4 @@
+displayName = Witcherria
+author = Tamet von Farencjusz &amp; G.A.S.
+version = 1.0
+includeSource = true
