@@ -13,7 +13,7 @@ Items: {
 
 	WolfMedallion: {
 		DisplayName: Wolf Medallion
-		Tooltip: ""
+		Tooltip: Grants witcher abilities
 	}
 
 	KaerMorhenArmor: {
@@ -173,27 +173,27 @@ UI.Vigor: Vigor
 Buffs: {
 	IgniDebuff: {
 		DisplayName: Igni Debuff
-		Description: Mods.Witcherria.Buffs.IgniDebuff.Description
+		Description: Defense is cut in half
 	}
 
 	QuenBuff: {
-		DisplayName: Quen Buff
-		Description: Mods.Witcherria.Buffs.QuenBuff.Description
+		DisplayName: Quen Protection
+		Description: You will dodge the next attack
 	}
 
 	WitcherSense: {
 		DisplayName: Witcher Sense
-		Description: Mods.Witcherria.Buffs.WitcherSense.Description
+		Description: Focus your superhuman senses to see more than ordinary human
 	}
 
 	YrdenDebuff: {
 		DisplayName: Yrden Debuff
-		Description: Mods.Witcherria.Buffs.YrdenDebuff.Description
+		Description: Decreased wrong metal type sword penalty. Take more damage if you are a ghost
 	}
 
 	RoachMountBuff: {
-		DisplayName: Roach Mount Buff
-		Description: Mods.Witcherria.Buffs.RoachMountBuff.Description
+		DisplayName: Roach Mount
+		Description: Riding a Roach
 	}
 }
 

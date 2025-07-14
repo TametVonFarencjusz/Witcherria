@@ -10,7 +10,7 @@ namespace Witcherria.Items.Mounts
     {
         public override void SetStaticDefaults()
         {
-            MountData.spawnDust = 3;
+            MountData.spawnDust = DustID.Smoke;
             MountData.buff = BuffType<Buffs.RoachMountBuff>();
             MountData.heightBoost = 34;
             MountData.flightTimeMax = 0;

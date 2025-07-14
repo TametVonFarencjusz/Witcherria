@@ -14,6 +14,7 @@ namespace Witcherria.Items
             Item.value = Item.sellPrice(0, 0, 10, 0);
             Item.rare = ItemRarityID.White;
             Item.accessory = true;
+            Item.vanity = true;
         }
 
         public override void UpdateVisibleAccessory(Player player, bool hideVisual)
