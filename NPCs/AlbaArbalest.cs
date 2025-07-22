@@ -27,8 +27,8 @@ namespace Witcherria.NPCs
             NPC.width = 42;
             NPC.height = 60;
             NPC.damage = 31;
-            NPC.defense = 4;
-            NPC.lifeMax = 77;
+            NPC.defense = 12;
+            NPC.lifeMax = 100;
             NPC.value = 50f;
             NPC.knockBackResist = 0.4f;
             NPC.HitSound = SoundID.NPCHit1;

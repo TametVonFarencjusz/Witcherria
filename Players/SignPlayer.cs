@@ -1,5 +1,6 @@
 using Microsoft.Xna.Framework;
 using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Reflection;
 using Terraria;
@@ -7,6 +8,8 @@ using Terraria.Audio;
 using Terraria.Graphics.Effects;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.GameInput;
+using Witcherria;
 using Witcherria.Items.Swords;
 using Witcherria.UI.Vigor;
 using static Terraria.ModLoader.ModContent;
@@ -269,7 +272,16 @@ namespace Witcherria.Players
                 }
                 else if (GetSignType() == SignType.Roach)
                 {
-                    if (Player.mount.Type != MountType<Items.Mounts.RoachMount>() && whistleTime <= 0)
+                    if (Main.netMode != NetmodeID.SinglePlayer)
+                    {
+                        whistleTime = 60;
+                        SoundEngine.PlaySound(new SoundStyle($"{nameof(Witcherria)}/Sounds/RoachSound")
+                        {
+                            Volume = 1.2f,
+                        }, Player.Center);
+                        Main.LocalPlayer.mount.SetMount(MountType<Items.Mounts.RoachMount>(), Main.LocalPlayer);
+                    }
+                    else if (Player.mount.Type != MountType<Items.Mounts.RoachMount>() && whistleTime <= 0)
                     {
                         whistleTime = 60;
                         SoundEngine.PlaySound(new SoundStyle($"{nameof(Witcherria)}/Sounds/RoachSound")
@@ -631,6 +643,42 @@ namespace Witcherria.Players
                 Player.maxRunSpeed *= 0.1f;
                 Player.moveSpeed *= 0.1f;
                 Player.accRunSpeed = 2f;
+            }
+        }
+
+
+        // Sync
+        public override void SyncPlayer(int toWho, int fromWho, bool newPlayer)
+        {
+            ModPacket packet = Mod.GetPacket();
+            packet.Write((byte)Witcherria.MessageType.SignSyncPlayer);
+            packet.Write((byte)Player.whoAmI);
+            packet.Write((byte)signCastTime);
+            packet.Write((byte)signType);
+            packet.Send(toWho, fromWho);
+        }
+
+
+        // Called in ValhallaMod.Networking.cs
+        public void ReceivePlayerSync(BinaryReader reader)
+        {
+            signCastTime = reader.ReadByte();
+            signType = (SignType)reader.ReadByte();
+        }
+
+        public override void CopyClientState(ModPlayer targetCopy)
+        {
+            SignPlayer clone = (SignPlayer)targetCopy;
+            clone.signCastTime = signCastTime;
+            clone.signType = signType;
+        }
+
+        public override void SendClientChanges(ModPlayer clientPlayer)
+        {
+            SignPlayer clone = (SignPlayer)clientPlayer;
+            if (signCastTime != clone.signCastTime || signType != clone.signType)
+            {
+                SyncPlayer(toWho: -1, fromWho: Main.myPlayer, newPlayer: false);
             }
         }
     }
