@@ -48,7 +48,7 @@ namespace Witcherria.NPCs
 
         public override float SpawnChance(NPCSpawnInfo spawnInfo)
         {
-            return SpawnCondition.OverworldDay.Chance * 0.07f;
+            return SpawnCondition.OverworldDay.Chance * 0.007f;
         }
 
         public override void HitEffect(NPC.HitInfo hit)
